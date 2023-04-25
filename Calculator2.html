@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="container.css">
+</head>
+<body>
+
+    <div class="container">
+    <div class="calculator">
+        <form>
+            <div class="output">
+                <div data-previous-operand class="previous-operand"></div>
+                <div data-current-operand class="current-operand"></div>
+            </div>
+            <div>
+                <input type="button" value="AC"data-all-clear  class="operator">
+                <input type="button" value="DE"data-delete  class="operator">
+                <input type="button" value="." data-number  class="operator">
+                <input type="button" value="/" data-operation  class="operator">
+            </div>
+            <div>
+                <input type="button" value="1" data-number>
+                <input type="button" value="2" data-number>
+                <input type="button" value="3" data-number>
+                <input type="button" value="*" data-operation  class="operator">
+            </div>
+            <div>
+                <input type="button" value="4" data-number>
+                <input type="button" value="5" data-number>
+                <input type="button" value="6" data-number>
+                <input type="button" value="-" data-operation  class="operator">
+            </div>
+            <div>
+                <input type="button" value="7" data-number>
+                <input type="button" value="8" data-number>
+                <input type="button" value="9" data-number>
+                <input type="button" value="+" data-operation  class="operator">
+            </div>
+            <div>
+                <input type="button" value="00" data-number>
+                <input type="button" value="0" data-number>
+                <input type="button" value="=" data-equals class="equal operator">  
+            </div>
+        </form>
+    </div>
+
+    </div>
+    <script src="Calculator2.js"></script>
+</body>
+</html>
