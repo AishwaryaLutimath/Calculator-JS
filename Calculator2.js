@@ -45,13 +45,13 @@ class Calculator {
               computation = prev + current
               break
             case'-':
-              computation = prev + current
+              computation = prev - current
               break
             case'*':
-              computation = prev + current
+              computation = prev * current
               break
             case'/':
-              computation = prev + current
+              computation = prev / current
               break
             default:
                 return
@@ -63,7 +63,7 @@ class Calculator {
 
     updateDisplay() {
         this.currentOperandTextElement.innerText = this.currentOperand
-        this.previousOperandTextElement.innerText = this.previousOperand
+        this.previousOperandTextElement.innerText = this.previousOperand + (this.operation == undefined ? '': this.operation)
     }
 
 
